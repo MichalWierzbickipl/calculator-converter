@@ -34,13 +34,13 @@ export default function App() {
         <button type="submit">convert</button>
       </form>
       <div>
-        is {fahrenheit} fahrenheit<div>is {kelvin} kelvin</div>
+        is {fahrenheit.toFixed()} fahrenheit<div>is {kelvin} kelvin</div>
         <br></br>
       </div>
       {calcHistory.map((c) => (
         <ul>
           <li>celcius: {c.celsius}</li>
-          <li>fahrenheit: {c.fahrenheit}</li>
+          <li>fahrenheit: {c.fahrenheit.toFixed()}</li>
           <li>kelvin: {c.kelvin}</li>
           <br></br>
         </ul>
